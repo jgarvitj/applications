@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import static SnakesAndLadders.util.DiceService.diceRoll;
+
 public class SnakeAndLadderGame implements Game {
     private Block[] board;
 
@@ -95,15 +97,7 @@ public class SnakeAndLadderGame implements Game {
         //log player id is index of player
     }
 
-    private int diceRoll() {
-        int roll =  (int) (Math.random()*6);
-        if(roll == 6) {
-            return roll;
-        } else {
-            System.out.println("Roll is " + (roll + 1));
-            return roll + 1;
-        }
-    }
+
 
     @Override
     public void inActivatePlayer(int id) {
