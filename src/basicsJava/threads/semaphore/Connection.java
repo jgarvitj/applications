@@ -16,7 +16,7 @@ public class Connection {
 
     public void connect() {
         try {
-            semaphore.acquire();
+            semaphore.acquire(12);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
