@@ -30,7 +30,7 @@ public class App {
     public static void main(String[] args) {
         ExecutorService executorService = Executors.newFixedThreadPool(2);
         for(int i = 0; i < 5; i++) {
-            executorService.submit(new Processor(i));
+
         }
         System.out.println("All tasks submitted");
         try {
