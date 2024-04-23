@@ -1,2 +1,4 @@
-package dsa;public class RolloutManager {
+package dsa;
+
+public class RolloutManager {
 }
